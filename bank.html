@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .cls1{
+            margin-left: 100px;
+            margin-top: 200px;
+            text-align: center;
+            margin-right: 200px;
+            
+            border-radius: 20px;
+        }
+        .cls4{
+            color:purple;
+            margin:5px;
+            border-radius:15px;
+        }
+        .imgs{
+            margin-top:50px;
+        }
+        *{
+            background-color:thistle;
+        }
+        .cls8{
+            text-decoration:none;
+            font-size:20px;
+            border:3px solid blue;
+            padding:7px;
+            margin:4px;
+            border-radius: 8px;
+        }
+
+    </style
+
+</head>
+<body>
+    <div style="display:inline-flex;">
+        <img src="dollar1.jpg" class="imgs">
+        <div class="cls1">
+               <div style="margin-bottom:15px;">
+                <h1 style="color:cadetblue">7 WONDER'S</h1>
+                <h1 style="color:cadetblue">ONLINE</h1>
+                <h1 style="color:cadetblue"> BANKING</h1>
+                <h1 style="color:cadetblue"> SERVICES</h1>
+                <button onclick="credit()" style="font-size: 35px;" class="cls4">credit</button>
+                <button onclick="debit()"style="font-size: 35px;"class="cls4">debit</button>
+                <button onclick="check()"style="font-size: 35px;"class="cls4">check balance</button>
+                </div>
+
+                <a href="index.html" class="cls8"> Back to home</a>
+      
+                <script>
+                    var amount=1000;
+                    function credit(){
+                        var n=prompt("enter amount to be credited");
+                        amount=amount+parseInt(n);
+                        window.alert("your amount "+n+" is credited successfully and after credited current balance is "+amount);
+            
+                    }
+                    function debit(){
+                        var n=prompt("enter amount to be debited");
+                        if(amount<parseInt(n)){
+                            window.alert("Not having sufficient amount");
+                        }
+                        else{
+                            amount=amount-parseInt(n);
+                          
+                           window.alert("your amount "+n+" is debited successfully and after debited current balance is "+amount);
+            
+                        }
+            
+            
+            
+                    }
+                    function check(){
+                        window.alert("available balance is "+amount);
+            
+                    }
+                </script>
+               
+                
+   
+           
+            
+        </div>
+        <img src="dollar3.jpg" class="imgs">
+        
+
+    </div>
+</body>
+
+</html>

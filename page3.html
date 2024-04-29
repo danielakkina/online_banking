@@ -1,0 +1,75 @@
+<!Doctype html>
+   <html> 
+    <head>
+        <style>
+        .cls4{
+            border:3px solid black;
+            font-size: 30px;
+            margin-top:20px;
+            margin-left:400px;
+            margin-right:500px;
+            text-align:center;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            padding:15px;
+
+
+        }
+        .cls2 {
+                margin-bottom:5px;
+                margin-top:5px;
+            }
+        .cls3{
+            margin-left:450px;
+            text-decoration:none;
+        }
+        *{
+            background-color:lightblue;
+        }
+        .cls7{
+           
+            margin-left:700px;
+            border: 3px solid black;
+            padding:6px;
+            border-radius:8px;
+        }
+        .cls1{
+            margin-left:600px;
+            margin-top:100px;
+        }
+    
+        </style>
+
+    </head>
+    <body>
+        <h1 class="cls1">LOGIN FORM</h1>
+        <form class="cls4">
+           <label>name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="name" class="cls2"><br>
+            <label>password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="password" id="password" class="cls2"><br>
+            <button onclick="fun1()" class="cls3">submit</button>
+        </form>
+        <a href="index.html" class="cls3 cls7">Back to home page</a>
+        <script>
+            var passwords=[1,2,3,4,5];
+            var names=["valli","deepu","jyothi","bhanu","lekhana"];
+              function fun1(){
+                var a=document.getElementById("password").value;
+                var name=document.getElementById("name").value;
+                var flag=0;
+                for(let i=0;i<passwords.length;i++){
+                    if(passwords[i]==a && names[i]==name){
+                        // document.write("login successfully");
+                        window.open("bank.html");
+                        flag=1;
+                        break;
+                    }
+               }
+               if(flag==0){
+                document.write("invalid");
+               }
+           }
+        </script>
+        </body>
+        </html>

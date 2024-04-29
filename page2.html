@@ -1,0 +1,104 @@
+<!Doctype html>
+   <html> 
+    <head>
+        <style>
+         .cls1{
+            font-size: 30px;
+            border:2px solid black;
+            border-radius: 20px;
+            text-align:center;
+            margin-right:500px ;
+            margin-left:300px ;
+            margin-top:50px ;
+            margin-bottom:40px;
+            padding:20px;
+            background-color: lightgrey;
+         }
+            .cls3{
+                margin-left:300px;
+                text-decoration: none;
+                background-color: lightgrey;
+                
+            }
+            .cls2{
+                margin-bottom:5px;
+                background-color: lightgrey;
+            }
+            .cls4{
+                text-decoration:none;
+                font-size:20px;
+                margin-left:200px;
+                border-radius: 6px;
+                background-color: lightgrey;
+            }
+            .cls5{
+                
+            border:2px solid black;
+            padding:5px;
+             border-radius:8px;
+             margin-top:50px;
+             background-color: lightgrey;
+             margin-left:600px;
+            }
+            label,input{
+                background-color: lightgrey;
+            }
+            *{
+                background-color:darkseagreen;
+            }
+            .cls7{
+                margin-left: 600px;
+                color:white;
+                margin-top:50px;
+                font-size: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 class="cls7">Signup Page</h1>
+        <form class="cls1">
+           <label>first name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="firstname" class="cls2" id="name1"><br>
+            <label>last name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="lastname" class="cls2" id="name2"><br>
+            <label >email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email"name="email" class="cls2"><br>
+            <label >adhar number  :</label>
+            <input type="number"name="adhar number" class="cls2"><br>
+            <label>state:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="state" class="cls2"><br>
+            <label>city:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="city" class="cls2"><br>
+            <label>street:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="street" class="cls2"><br>
+            <label >zipcode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" name="zipcode" class="cls2"><br>
+            <label>dateofbirth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" name="DOB" class="cls2"><br>
+            <label>gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label>male</label>
+            <input type="radio" name="male">
+            <label>female</label>
+            <input type="radio" name="female">
+            <label>others</label>
+            <input type="radio" name="others"><br>
+            <label>phone number:&nbsp;&nbsp;</label>
+            <input type="number" name="phone number"><br>
+        <button onclick="myfun()" class="cls4">submit</button>
+
+          
+        </form>
+        <a href="index.html" class="cls4 cls5">Back to home page</a>
+        <script>
+            function myfun(){
+                var fn=document.getElementById("name1").value;
+                var ln=document.getElementById("name2").value;
+               // window.alert("Hello mr "+fn+" "+" "+ln+" your account is created successfully");
+                window.open("bank.html");
+
+            }
+        </script>
+    </body>
+   </html>
